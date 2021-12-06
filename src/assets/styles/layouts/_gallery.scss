@@ -24,14 +24,13 @@
   .item:nth-child(4) {
     background-color: transparent;
   }
-}
-
-.item {
-  width: 56%;
-  width: calc(60% - 2rem);
-  float: left;
-  position: relative;
-  margin: 0 1rem 2rem;
+  .item {
+    width: 56%;
+    width: calc(60% - 2rem);
+    float: left;
+    position: relative;
+    margin: 0 1rem 2rem;
+  }
 }
 
 .item > blockquote {
@@ -167,13 +166,12 @@
       z-index: 0;
       //box-shadow: none;
     }
-  }
-
-  .item {
-    //box-shadow: $card-box-shadow;
-    position: relative;
-    width: 100%;
-    margin: 0;
+    .item {
+      //box-shadow: $card-box-shadow;
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
   }
 
   .item > blockquote {
