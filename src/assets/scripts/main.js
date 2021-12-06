@@ -20,7 +20,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 
  function generateHTML([h, v]) {
    return `
-   <div class="photo h${h} v${v}">
+   <div class="photo h__${h} v__${v}">
      <img src="https://picsum.photos/id/${randomNumber(60)}/800/400/">
      <div class="item__overlay">
        <button class="btn__lite">View </button>
