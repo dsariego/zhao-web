@@ -3,48 +3,112 @@
 }
 
 body {
+  min-width: 380px;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  //height: 100vh;
   margin: 0;
-  padding: 2rem;
+  //padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  background-color: $color1;
+  background-image: url("../images/dust-overlay.png");
+  color: $color4;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
+main {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
+  margin: 0 auto;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+header {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  background: $color3;
+  border-bottom: 5px solid $color4;
+}
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+footer {
+  display: block;
+  width: 100%;
+  min-height: 15vh;
+  background: $color3;
+  border-top: 5px solid $color4;
+}
+
+main > div,
+header > div,
+footer > div {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: white;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: $font-family-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
+h2 {
+  font-family: $font-family-serif;
+  padding: 0.5rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+
+h5 {
+  color: $color1;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+a {
+  color: $color41;
+  text-decoration: none $color41;
+}
+
+a:hover {
+  color: $color3;
+  text-decoration: underline wavy $color3;
+}
+
+blockquote {
+  font-style: italic;
+  align-self: start;
+  width: 100%;
+  padding: 0.8rem;
+  color: $color1;
+  background-color: $color31;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+
+.feature {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.pres__title {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  margin: 0 auto 1rem;
+  background: $color3;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: $card-box-shadow;
+  span {
+    color: $color2;
+    text-decoration: underline;
   }
 }

@@ -1,0 +1,246 @@
+/* MEDIA QUERIES */
+
+/* For devices with screen resolution of at least 801px */
+@media all and (max-width: 1440px) {
+  @supports (display: grid) {
+    .item > blockquote {
+      top: 1.8rem;
+      left: 1.8rem;
+    }
+
+    .item1 > p,
+    .item1 > h1 {
+      padding: 0.8rem;
+    }
+
+    .item1 {
+      .presentation {
+        font-style: italic;
+        font-size: 0.9rem;
+        margin: 1rem 0 2rem 0;
+      }
+      .author {
+        font-size: 1.2rem;
+      }
+    }
+    h1 {
+      font-size: 3.6rem;
+    }
+    .feature {
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
+    blockquote {
+      padding: 0.5rem;
+    }
+    .item4 blockquote {
+      margin-top: 5%;
+    }
+    .item3 blockquote {
+      margin-top: 15%;
+    }
+  }
+}
+
+@media all and (max-width: 1060px) {
+  // Layout with floats box
+  .cover__items .item:nth-child(1) {
+    float: right;
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    float: left;
+    margin: 0 0 2rem;
+  }
+  .item > blockquote {
+    height: fit-content;
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  footer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @supports (display: grid) {
+    .cover__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-gap: 5px 15px;
+      grid-auto-flow: row;
+    }
+    .cover__items .item:nth-child(1) {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 2;
+    }
+    .cover__items .item:nth-child(2) {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 2;
+    }
+    .cover__items .item:nth-child(3) {
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 2;
+    }
+    .cover__items .item:nth-child(4) {
+      grid-column: 1 / span 1;
+      grid-row: 4 / span 2;
+    }
+
+    .item > blockquote {
+      top: 1rem;
+      left: 1rem;
+    }
+    .item1 > p,
+    .item1 > h1 {
+      padding: 0.5rem;
+    }
+    .item4 {
+      display: flex;
+    }
+    .item3 {
+      display: flex;
+    }
+    .item2 {
+      display: flex;
+    }
+    .item3 blockquote {
+      margin-top: 0;
+    }
+    .item4 blockquote {
+      margin-top: 0;
+    }
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  .feature {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  blockquote {
+    padding: 0.4rem;
+  }
+
+  div.card {
+    width: 46%;
+    width: calc(50% - 2rem);
+  }
+}
+
+/* Mobile First Design */
+@media all and (max-width: 680px) {
+  .item__overlay {
+    transform: translateY(0);
+  }
+  .item__overlay {
+    background: none;
+  }
+  body {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @supports (display: grid) {
+    .cover__items {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4fr;
+      grid-gap: 10px 0;
+      grid-auto-flow: column;
+    }
+    .cover__items .item:nth-child(1) {
+      grid-column: span 1;
+      grid-row: 1 / span 1;
+    }
+    .cover__items .item:nth-child(2) {
+      grid-column: span 1;
+      grid-row: 3 / span 1;
+    }
+    .cover__items .item:nth-child(3) {
+      grid-column: span 1;
+      grid-row: 5 / span 1;
+    }
+    .cover__items .item:nth-child(4) {
+      grid-column: span 1;
+      grid-row: 7 / span 1;
+    }
+    .item3 blockquote {
+      margin-top: 0;
+    }
+  }
+  div.card {
+    width: 96%;
+    width: calc(100% - 2rem);
+  }
+
+  .post {
+    display: grid;
+    padding-top: 5rem;
+    padding: 0 0.6em;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .post > * {
+    grid-column: 1fr;
+  }
+
+  .post > figure {
+    grid-column: 1fr;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+  }
+
+  .post > blockquote {
+    grid-column: 1fr;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding: 10rem;
+    color: $color4;
+    background-color: $color1;
+  }
+
+  .tip {
+    //background: $color2;
+    background: linear-gradient(
+      to var(--direction, right),
+      $color2,
+      transparent
+    );
+    padding: 10px;
+    grid-row: span 1;
+    align-self: none;
+  }
+
+  .tip-left {
+    grid-column: 1fr;
+    text-align: right;
+    border-right: 2px solid $color3;
+  }
+
+  .tip-right {
+    grid-column: 1fr;
+    border-left: 2px solid $color3;
+  }
+
+  .post h2 {
+    grid-column: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  .post h2:before,
+  .post h2:after {
+    display: none;
+  }
+}

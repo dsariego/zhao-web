@@ -1,0 +1,77 @@
+.post {
+  max-width: 1440px;
+  display: grid;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  grid-gap: 1rem 4rem;
+  grid-template-columns: 1fr 15fr 4fr;
+  background: $color1;
+}
+
+.post > * {
+  grid-column: 2 / -2;
+}
+
+img {
+  max-width: 100%;
+}
+
+.post > figure {
+  margin: 0;
+  grid-column: 2 / -1;
+}
+
+figcaption {
+  font-size: 0.7rem;
+}
+
+.post > blockquote {
+  grid-column: 1 / -1;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  color: $color4;
+  background-color: $color1;
+}
+
+.tip {
+  //background: $color2;
+  background: linear-gradient(to var(--direction, right), $color2, transparent);
+  padding: 10px;
+  grid-row: span 3;
+  align-self: start;
+}
+
+.tip-left {
+  grid-column: 1 / span 1;
+  text-align: right;
+  border-right: 2px solid $color3;
+}
+
+.tip-right {
+  grid-column: span 1 / -1;
+  border-left: 2px solid $color3;
+}
+
+.post h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.post h2:before,
+.post h2:after {
+  display: block;
+  content: "";
+  height: 10px;
+  background: linear-gradient(to var(--direction, left), $color31, transparent);
+}
+
+.post h2:after {
+  --direction: right;
+}

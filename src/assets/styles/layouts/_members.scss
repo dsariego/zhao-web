@@ -1,0 +1,35 @@
+.members {
+  max-width: 1440px;
+  display: flex;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.card {
+  width: 29%;
+  width: calc(33.33333333% - 2rem);
+  margin: 0 auto;
+  background-color: $color4;
+  margin: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: $card-box-shadow;
+  img {
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid $color3;
+  }
+}
+
+.card-body p {
+  color: $color1;
+}

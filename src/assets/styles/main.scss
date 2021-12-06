@@ -15,8 +15,12 @@
  * see commented examples below
  */
 
+@import "bootstrap/scss/bootstrap";
+
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+
+//@import "@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import layouts
@@ -24,6 +28,14 @@
  */
 
 @import "layouts/home";
+@import "layouts/gallery";
+@import "layouts/galery";
+@import "layouts/media";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/members";
+@import "layouts/article";
+@import "layouts/footer";
 
 /**
  * Do NOT include anything else in this file!
