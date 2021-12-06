@@ -2,6 +2,13 @@
 .cover__items {
   margin: 0 auto;
   max-width: 1440px;
+  .item {
+    width: 56%;
+    width: calc(60% - 2rem);
+    float: left;
+    position: relative;
+    margin: 0 1rem 2rem;
+  }
   .item:nth-child(1) {
     background-color: $color3;
     -webkit-border-bottom-right-radius: 20px;
@@ -23,13 +30,6 @@
   }
   .item:nth-child(4) {
     background-color: transparent;
-  }
-  .item {
-    width: 56%;
-    width: calc(60% - 2rem);
-    float: left;
-    position: relative;
-    margin: 0 1rem 2rem;
   }
 }
 
@@ -123,6 +123,12 @@
     grid-template-rows: repeat(9, minmax(1fr, 10vh));
     grid-gap: 10px 30px;
     grid-auto-flow: row;
+    .item {
+      //box-shadow: $card-box-shadow;
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
     .item:nth-child(1) {
       background-color: $color3;
       grid-column: 8 / span 3;
@@ -165,12 +171,6 @@
       grid-row: 1 / -1;
       z-index: 0;
       //box-shadow: none;
-    }
-    .item {
-      //box-shadow: $card-box-shadow;
-      position: relative;
-      width: 100%;
-      margin: 0;
     }
   }
 
