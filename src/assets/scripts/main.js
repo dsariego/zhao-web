@@ -13,6 +13,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
  * Write any other JavaScript below
  */
 
+// Dinamic logic to construction gallery layout
  const gallery = document.querySelector('.gallery');
  const overlay = document.querySelector('.overlay');
  const overlayImage = overlay.querySelector('img');
@@ -20,7 +21,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 
  function generateHTML([h, v]) {
    return `
-   <div class="photo h__${h} v__${v}">
+   <div class="photo horizontal__${h} vertical__${v}">
      <img src="https://picsum.photos/id/${randomNumber(60)}/800/400/">
      <div class="item__overlay">
        <button class="btn__lite">View </button>

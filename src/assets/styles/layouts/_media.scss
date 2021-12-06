@@ -6,6 +6,7 @@
     .item > blockquote {
       top: 1.8rem;
       left: 1.8rem;
+      padding: 0.5rem;
     }
 
     .item1 > p,
@@ -22,16 +23,13 @@
       .author {
         font-size: 1.2rem;
       }
-    }
-    h1 {
-      font-size: 3.6rem;
+      h1 {
+        font-size: 3.6rem;
+      }
     }
     .feature {
       font-size: 1.1rem;
       line-height: 1.4rem;
-    }
-    blockquote {
-      padding: 0.5rem;
     }
     .item4 blockquote {
       margin-top: 5%;
@@ -44,15 +42,17 @@
 
 @media all and (max-width: 1060px) {
   // Layout with floats box
-  .cover__items .item:nth-child(1) {
-    float: right;
-    width: 100%;
-  }
-
-  .item {
-    width: 100%;
-    float: left;
-    margin: 0 0 2rem;
+  .cover__items {
+    .item:nth-child(1) {
+      float: right;
+      width: 100%;
+      height: auto;
+    }
+    .item {
+      width: 100%;
+      float: left;
+      margin: 0 0 2rem;
+    }
   }
   .item > blockquote {
     height: fit-content;
@@ -94,6 +94,7 @@
     .item > blockquote {
       top: 1rem;
       left: 1rem;
+      padding: 0.4rem;
     }
     .item1 > p,
     .item1 > h1 {
@@ -122,10 +123,6 @@
     font-size: 1rem;
     line-height: 1.2rem;
   }
-  blockquote {
-    padding: 0.4rem;
-  }
-
   div.card {
     width: 46%;
     width: calc(50% - 2rem);
@@ -136,8 +133,6 @@
 @media all and (max-width: 680px) {
   .item__overlay {
     transform: translateY(0);
-  }
-  .item__overlay {
     background: none;
   }
   body {
@@ -178,8 +173,7 @@
 
   .post {
     display: grid;
-    padding-top: 5rem;
-    padding: 0 0.6em;
+    padding: 5rem 0.6em 0;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
   }

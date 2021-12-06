@@ -5,7 +5,11 @@
   margin-bottom: 2rem;
   grid-gap: 1rem 4rem;
   grid-template-columns: 1fr 15fr 4fr;
-  background: $color1;
+  background: $color21;
+  border: 2px solid $color4;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .post > * {
@@ -34,7 +38,7 @@ figcaption {
   margin: 0;
   padding: 1rem;
   color: $color4;
-  background-color: $color1;
+  background-color: $color21;
 }
 
 .tip {
